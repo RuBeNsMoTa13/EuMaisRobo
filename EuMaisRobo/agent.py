@@ -6,7 +6,7 @@ from EuMaisRobo.tools import count_characters
 root_agent = Agent(
     name="EuMaisRobo",
     model="gemini-2.0-flash",
-    description="A bot that shortens messages while maintaining their core meaning",
+    description="a bot can search news about ai ",
     instruction=ROOT_AGENT_INSTRUCTION,
     tools=[count_characters],
 )
