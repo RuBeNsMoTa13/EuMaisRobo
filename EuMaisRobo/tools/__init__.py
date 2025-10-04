@@ -1,3 +1,2 @@
-from .character_counter import count_characters
-
-__all__ = ["count_characters"]
+from .news_search import search_news
+__all__ = ["search_news"]
