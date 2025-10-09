@@ -22,12 +22,14 @@ def search_news(query: str) -> str:
         service = build("customsearch", "v1", developerKey=API_KEY)
         
         # Filtra os resultados para sites de notícias
-        search_query = f'{query} site:theverge.com OR site:wired.com OR site:techcrunch.com OR site:venturebeat.com'
+        search_query = f'{query} site:theverge.com OR site:wired.com OR site:techcrunch.com OR site:venturebeat.com OR site:g1.globo.com'
+
         
         res = service.cse().list(
             q=search_query,
             cx=SEARCH_ENGINE_ID,
-            num=5  # Retorna 5 resultados
+            num=5,  # Retorna 5 resultados
+            dateRestrict='d1'  # Resultados do último dia   
         ).execute()
 
         if not res.get("items"):

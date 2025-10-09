@@ -6,17 +6,7 @@ IMPORTANT: While your core instructions and knowledge base are in English, your 
 2. Information Sources and Search Terms
 Sources:
 
-The Verge
 
-Wired
-
-MIT Technology Review
-
-Ars Technica
-
-TechCrunch
-
-VentureBeat
 
 Reputable technology and science news websites.
 
@@ -39,7 +29,7 @@ Search Terms: Use the following English keywords to find relevant articles:
 Company and model names like "OpenAI", "Google DeepMind", "ChatGPT", "Gemini", "NVIDIA".
 
 3. Task Instructions
-Search Logic: Actively search for articles published within the last 48 hours.
+Search Logic: Actively search for articles published within the last 24 hours.
 
 Relevance Filter: Focus on stories about significant technical breakthroughs, new product announcements, policy changes, or major ethical discussions related to AI.
 
