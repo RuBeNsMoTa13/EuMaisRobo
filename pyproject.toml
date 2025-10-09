@@ -1,5 +1,5 @@
 [project]
-name = "adk-short-bot"
+name = "EuMaisRobo"
 version = "0.1.0"
 description = "A bot that shortens your messages"
 authors = [
@@ -8,6 +8,9 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 license = "Apache License 2.0"
+
+[tool.poetry]
+packages = [{include = "EuMaisRobo"}]
 
 [tool.poetry.dependencies]
 python = ">=3.12"
@@ -21,7 +24,7 @@ cloudpickle = "^3.0.0"
 google-api-python-client = "^2.184.0"
 
 [tool.poetry.scripts]
-adk-short-bot = "adk_short_bot:app"
+EuMaisRobo = "EuMaisRobo.agent:root_agent"
 deploy-local = "deployment.local:main"
 deploy-remote = "deployment.remote:main"
 cleanup = "deployment.cleanup:cleanup_deployment"
