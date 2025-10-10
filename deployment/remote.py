@@ -83,11 +83,13 @@ def create_session(resource_id: str, user_id: str) -> None:
     remote_app = agent_engines.get(resource_id)
     remote_session = remote_app.create_session(user_id=user_id)
     print("Created session:")
-    print(f"  Session ID: {remote_session['id']}")
-    print(f"  User ID: {remote_session['user_id']}")
-    print(f"  App name: {remote_session['app_name']}")
-    print(f"  Last update time: {remote_session['last_update_time']}")
-    print("\nUse this session ID with --session_id when sending messages.")
+    print(f"  Session ID: {remote_session.get('id', 'N/A')}")
+    print(f"  User ID: {remote_session.get('user_id', user_id)}")
+    print(f"  App name: {remote_session.get('app_name', 'N/A')}")
+    print(f"  Last update time: {remote_session.get('last_update_time', 'N/A')}")
+    print(f"\nUse this session ID with --session_id when sending messages:")
+    print(f"Session ID: {remote_session.get('id', 'N/A')}")
+    return remote_session.get('id')
 
 
 def list_sessions(resource_id: str, user_id: str) -> None:
